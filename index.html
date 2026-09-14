@@ -108,13 +108,23 @@
     }
 
     /* Hero */
-    .hero {
-      padding: 110px 0 100px;
-      border-bottom: 1px solid var(--line);
-      background:
-        radial-gradient(circle at 85% 20%, rgba(216,168,93,0.08), transparent 32%),
-        linear-gradient(135deg, #0b1118 0%, #101c28 100%);
-    }
+.hero {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  padding: 130px 0 110px;
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 16, 27, 0.98) 0%,
+      rgba(7, 16, 27, 0.88) 38%,
+      rgba(7, 16, 27, 0.48) 68%,
+      rgba(7, 16, 27, 0.35) 100%
+    ),
+    url("hero-products.png") center center / cover no-repeat;
+}
 
     .hero-grid {
       display: grid;

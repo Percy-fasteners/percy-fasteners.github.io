@@ -1,0 +1,755 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Industrial Fasteners & Power Hardware Supplier | Percy</title>
+
+  <meta name="description" content="Percy connects importers, distributors, and industrial buyers with fasteners, transmission tower hardware, solar mounting components, and OEM supply support.">
+
+  <meta name="author" content="Percy">
+
+  <meta property="og:title" content="Industrial Fasteners & Power Hardware Supplier">
+  <meta property="og:description" content="Fasteners, power infrastructure hardware, solar mounting components, and OEM supply support.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --bg: #0b1118;
+      --surface: #111b26;
+      --surface-light: #172534;
+      --text: #f3f6f8;
+      --muted: #9eacb9;
+      --line: #283847;
+      --accent: #d8a85d;
+      --accent-hover: #e7bd7b;
+      --max-width: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 40px, var(--max-width));
+      margin: 0 auto;
+    }
+
+    /* Navigation */
+    header {
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: rgba(11,17,24,0.96);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      color: var(--muted);
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    .nav-button {
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 9px 16px;
+      border-radius: 4px;
+    }
+
+    .nav-button:hover {
+      background: var(--accent);
+      color: #111;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 110px 0 100px;
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(circle at 85% 20%, rgba(216,168,93,0.08), transparent 32%),
+        linear-gradient(135deg, #0b1118 0%, #101c28 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 66px);
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      max-width: 720px;
+      margin-bottom: 26px;
+    }
+
+    .hero-text {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 580px;
+      margin-bottom: 34px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 22px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .button-primary {
+      background: var(--accent);
+      color: #111820;
+    }
+
+    .button-primary:hover {
+      background: var(--accent-hover);
+    }
+
+    .button-secondary {
+      border: 1px solid var(--line);
+      color: var(--text);
+    }
+
+    .button-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .hero-panel {
+      border: 1px solid var(--line);
+      background: rgba(17,27,38,0.75);
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .panel-label {
+      color: var(--accent);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 24px;
+    }
+
+    .panel-item {
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .panel-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .panel-item strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .panel-item span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* General sections */
+    section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      max-width: 650px;
+      margin-bottom: 42px;
+    }
+
+    .section-label {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.15;
+      letter-spacing: -0.8px;
+      margin-bottom: 16px;
+    }
+
+    .section-description {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* Products */
+    .products {
+      background: #0e1721;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .product-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 30px;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .product-card:hover {
+      border-color: #526575;
+      transform: translateY(-3px);
+    }
+
+    .product-number {
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 32px;
+    }
+
+    .product-card h3 {
+      font-size: 21px;
+      line-height: 1.25;
+      margin-bottom: 13px;
+    }
+
+    .product-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .product-link {
+      color: var(--accent);
+      font-size: 13px;
+      margin-top: 24px;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .about-intro {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .capability-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .capability {
+      border-top: 1px solid var(--line);
+      padding-top: 15px;
+      font-size: 14px;
+    }
+
+    .capability::before {
+      content: "— ";
+      color: var(--accent);
+    }
+
+    /* Contact */
+    .contact {
+      background: #0e1721;
+    }
+
+    .contact-box {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .contact-box h2 {
+      margin-bottom: 18px;
+    }
+
+    .contact-box p {
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 520px;
+    }
+
+    .contact-details {
+      border-left: 1px solid var(--line);
+      padding-left: 35px;
+    }
+
+    .contact-row {
+      margin-bottom: 22px;
+    }
+
+    .contact-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-row label {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 5px;
+    }
+
+    .contact-row a,
+    .contact-row span {
+      color: var(--text);
+      font-size: 15px;
+      word-break: break-word;
+    }
+
+    .contact-row a:hover {
+      color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+    }
+
+    footer p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-name {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* Mobile */
+    @media (max-width: 800px) {
+      .hero {
+        padding: 75px 0 70px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-box {
+        grid-template-columns: 1fr;
+        gap: 38px;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-box {
+        padding: 30px;
+      }
+
+      .contact-details {
+        border-left: none;
+        border-top: 1px solid var(--line);
+        padding-left: 0;
+        padding-top: 30px;
+      }
+
+      nav {
+        gap: 14px;
+      }
+
+      nav a:not(.nav-button) {
+        display: none;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: min(100% - 28px, var(--max-width));
+      }
+
+      .nav {
+        min-height: 65px;
+      }
+
+      .brand {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 39px;
+      }
+
+      .hero-text {
+        font-size: 15px;
+      }
+
+      .capability-list {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav">
+      <a href="#" class="brand">PERCY<span>.</span></a>
+
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-button">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <div class="eyebrow">Industrial Supply · China</div>
+
+          <h1>Fasteners & Power Infrastructure Supply.</h1>
+
+          <p class="hero-text">
+            Supporting importers, distributors, wholesalers, and industrial buyers
+            with fasteners, transmission tower hardware, solar mounting components,
+            and OEM supply inquiries.
+          </p>
+
+          <div class="actions">
+            <a href="#contact" class="button button-primary">
+              Send an Inquiry
+            </a>
+
+            <a href="#products" class="button button-secondary">
+              Explore Products
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-label">Supply Focus</div>
+
+          <div class="panel-item">
+            <strong>Industrial Fasteners</strong>
+            <span>Standard fasteners, self-drilling screws, and custom parts.</span>
+          </div>
+
+          <div class="panel-item">
+            <strong>Power Infrastructure</strong>
+            <span>Fasteners and hardware for transmission-related applications.</span>
+          </div>
+
+          <div class="panel-item">
+            <strong>Solar Mounting</strong>
+            <span>Mounting components and fastening solutions for PV applications.</span>
+          </div>
+
+          <div class="panel-item">
+            <strong>OEM Supply Support</strong>
+            <span>Specification, drawing, and quantity-based quotation support.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="section-label">Product Categories</div>
+          <h2>Supply solutions for industrial applications.</h2>
+          <p class="section-description">
+            A focused range of fastening and hardware products for international
+            sourcing, distribution, and project-related requirements.
+          </p>
+        </div>
+
+        <div class="product-grid">
+
+          <article class="product-card">
+            <div>
+              <div class="product-number">01 / FASTENERS</div>
+              <h3>Industrial Fasteners</h3>
+              <p>
+                Self-drilling screws, standard fasteners, and OEM components
+                for industrial and commercial supply.
+              </p>
+            </div>
+            <div class="product-link">Specification-based inquiries →</div>
+          </article>
+
+          <article class="product-card">
+            <div>
+              <div class="product-number">02 / POWER</div>
+              <h3>Transmission Tower Hardware</h3>
+              <p>
+                Fasteners and related hardware for power transmission and
+                infrastructure applications.
+              </p>
+            </div>
+            <div class="product-link">Discuss your requirements →</div>
+          </article>
+
+          <article class="product-card">
+            <div>
+              <div class="product-number">03 / SOLAR</div>
+              <h3>Solar Mounting Components</h3>
+              <p>
+                Fastening and mounting components for photovoltaic and
+                solar installation supply.
+              </p>
+            </div>
+            <div class="product-link">Request product information →</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container about-grid">
+
+        <div>
+          <div class="section-label">About the Supply Network</div>
+          <h2>A practical sourcing contact for industrial buyers.</h2>
+          <p class="about-intro">
+            Connecting international buyers with manufacturing and supply
+            support for fastening and power-related products.
+          </p>
+        </div>
+
+        <div class="about-content">
+          <p>
+            I am Percy, an international sales contact representing
+            Hebei Chengzhi Fastener Manufacturing Co., Ltd.
+          </p>
+
+          <p>
+            Our product scope includes industrial fasteners, self-drilling
+            screws, power infrastructure hardware, solar mounting components,
+            and OEM-related supply inquiries.
+          </p>
+
+          <p>
+            For a quotation, buyers can share product drawings, photos,
+            specifications, estimated quantities, and destination details.
+            This helps us identify the appropriate product and prepare
+            a more accurate response.
+          </p>
+
+          <div class="capability-list">
+            <div class="capability">Standard and custom supply</div>
+            <div class="capability">Specification-based quotations</div>
+            <div class="capability">Bulk order inquiries</div>
+            <div class="capability">Export sourcing support</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+
+        <div class="contact-box">
+
+          <div>
+            <div class="section-label">Get in Touch</div>
+
+            <h2>Let’s discuss your sourcing requirements.</h2>
+
+            <p>
+              Looking for fasteners, transmission tower hardware,
+              solar mounting components, or OEM parts?
+              Send your specifications, drawings, photos, or estimated
+              quantities, and I will help review your inquiry.
+            </p>
+
+            <div class="actions" style="margin-top: 28px;">
+              <!-- Replace the email address below -->
+              <a href="mailto:percywong@gmail.com?subject=Product%20Inquiry"
+                 class="button button-primary">
+                Email Percy
+              </a>
+
+              <!-- Replace the WhatsApp number below -->
+              <a href="https://wa.me/8613316220657"
+                 class="button button-secondary"
+                 target="_blank"
+                 rel="noopener">
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-details">
+
+            <div class="contact-row">
+              <label>Contact</label>
+              <span>Percy</span>
+            </div>
+
+            <div class="contact-row">
+              <label>Company</label>
+              <span>Hebei Chengzhi Fastener Manufacturing Co., Ltd.</span>
+            </div>
+
+            <div class="contact-row">
+              <label>Company Website</label>
+              <a href="https://cz-fasteners.com"
+                 target="_blank"
+                 rel="noopener">
+                cz-fasteners.com
+              </a>
+            </div>
+
+            <div class="contact-row">
+              <label>Email</label>
+              <a href="mailto:percywong@gmail.com">
+                percywong@gmail.com
+              </a>
+            </div>
+
+            <div class="contact-row">
+              <label>WhatsApp</label>
+              <a href="https://wa.me/8613316220657"
+                 target="_blank"
+                 rel="noopener">
+                Contact via WhatsApp
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-name">PERCY. / INDUSTRIAL SUPPLY</div>
+      <p>© 2026 Percy. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
